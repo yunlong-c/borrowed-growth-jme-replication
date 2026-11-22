@@ -1,0 +1,183 @@
+file,field,description,unit,construction,missing_convention
+data/processed/native_measures.csv,date,Economic observation month or quarter,YYYY-MM or YYYYQn,"native calendar, no forecast lag",empty = missing; zero retained
+data/processed/native_measures.csv,FMP_NSA,Non-seasonally-adjusted employer-to-employer transition probability,decimal probability,"Provider column, no additional smoothing",empty = missing; zero retained
+data/processed/native_measures.csv,FMP_SA,Seasonally adjusted employer-to-employer transition probability,decimal probability,"Provider column, no additional smoothing",empty = missing; zero retained
+data/processed/native_measures.csv,FMP_SA_3MA,Published three-month moving average of FMP_SA,decimal probability,"Provider column, no additional smoothing",empty = missing; zero retained
+data/processed/native_measures.csv,E2E,Original seasonally adjusted employer transition probability (auxiliary-regression input),decimal probability,Provider FMP_SA column,empty = missing; zero retained
+data/processed/native_measures.csv,PAYROLL,Nonfarm payroll employment growth,monthly log growth times 100,100*(log(PAYEMS_t)-log(PAYEMS_(t-1))),empty = missing; zero retained
+data/processed/native_measures.csv,UNEMP,Unemployment rate,percent,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,LFPR,Labor force participation rate,percent,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,EPR,Employment-population ratio,percent,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,LIG_JW,Smoothed growth in per-capita personal income excluding dividends,percent,I=(PI-PDI)/POPTHM;100*((I_t+I_(t-1))/(I_(t-1)+I_(t-2))-1),empty = missing; zero retained
+data/processed/native_measures.csv,CLAIMS_INTENSITY,Initial unemployment claims relative to lagged employment,percent,100*last_week(IC4WSA_t)/(1000*CE16OV_(t-1)),empty = missing; zero retained
+data/processed/native_measures.csv,LOG_VU_LONG,"Log vacancy-unemployment ratio, extended history",log ratio,log(V_long/UNEMPLOY),empty = missing; zero retained
+data/processed/native_measures.csv,LMT_VU_LONG,"Change in log vacancy-unemployment ratio, extended history",monthly log change,log(V_long_t/UNEMPLOY_t)-log(V_long_(t-1)/UNEMPLOY_(t-1)),empty = missing; zero retained
+data/processed/native_measures.csv,JPR_PRIVATE_LONG,"Private-sector job posting rate, extended history",percent,100*V_private_long/(USPRIV+V_private_long),empty = missing; zero retained
+data/processed/native_measures.csv,HIRES_PRIVATE_LONG,"Private-sector hiring rate, extended history",percent,Before 2000-12: DFH quarterly H_Rate/3 plus anchor level difference; thereafter JTS1000HIR,empty = missing; zero retained
+data/processed/native_measures.csv,QUITS_PRIVATE_LONG,"Private-sector quits rate, extended history",percent,Before 2000-12: DFH quarterly Q_Rate/3 plus anchor level difference; thereafter JTS1000QUR,empty = missing; zero retained
+data/processed/native_measures.csv,CPS_UE,Unemployment-to-employment transition probability,percent,100*UE/(UE+UU+UN),empty = missing; zero retained
+data/processed/native_measures.csv,WGT_STAYER,Job-stayer wage growth,percent,Provider data_overall column I,empty = missing; zero retained
+data/processed/native_measures.csv,WGT_SWITCHER,Job-switcher wage growth,percent,Provider data_overall column J,empty = missing; zero retained
+data/processed/native_measures.csv,WGT_SPREAD,Switcher-stayer wage growth spread,percentage points,WGT_SWITCHER-WGT_STAYER,empty = missing; zero retained
+data/processed/native_measures.csv,DP,Log dividend-price ratio,log ratio,log(D12)-log(Index),empty = missing; zero retained
+data/processed/native_measures.csv,DY,Log dividend yield,log ratio,log(D12_t)-log(Index_(t-1)),empty = missing; zero retained
+data/processed/native_measures.csv,EP,Log earnings-price ratio,log ratio,log(E12)-log(Index),empty = missing; zero retained
+data/processed/native_measures.csv,DE,Log dividend-earnings ratio,log ratio,log(D12)-log(E12),empty = missing; zero retained
+data/processed/native_measures.csv,BM,Book-to-market ratio,ratio,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,NTIS,Net equity issuance,provider ratio,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,TBL,Treasury bill rate,annualized decimal rate,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,LTY,Long-term government bond yield,annualized decimal rate,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,TMS,Term yield spread,annualized decimal spread,lty-tbl,empty = missing; zero retained
+data/processed/native_measures.csv,DFY,Default yield spread,annualized decimal spread,BAA-AAA,empty = missing; zero retained
+data/processed/native_measures.csv,LTR,Long-term government bond return,"monthly simple return, decimal",Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,DFR,Default return spread,"monthly return difference, decimal",corpr-ltr,empty = missing; zero retained
+data/processed/native_measures.csv,SVAR,Stock return variance,provider variance scale,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,INFL,Inflation,monthly decimal rate,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,MARKET_EXCESS_LOG_RETURN,S&P monthly excess log return,monthly decimal log return,log(1+CRSP_SPvw)-log(1+Rfree),empty = missing; zero retained
+data/processed/native_measures.csv,MARKET_SIMPLE_RETURN,S&P monthly total simple return,monthly decimal simple return,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,RFREE,Monthly risk-free simple return,monthly decimal simple return,Provider column; do not divide by 12,empty = missing; zero retained
+data/processed/native_measures.csv,D12,Nominal trailing-twelve-month S&P dividends,provider index cash-flow level,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,E12,Nominal trailing-twelve-month S&P earnings,provider index cash-flow level,Provider column,empty = missing; zero retained
+data/processed/native_measures.csv,USREC,NBER recession indicator,binary 0/1,Provider column,empty = missing; zero retained
+data/processed/native_quarterly.csv,date,Economic observation month or quarter,YYYY-MM or YYYYQn,"native calendar, no forecast lag",empty = missing; zero retained
+data/processed/native_quarterly.csv,LEHD_EEHireR,LEHD employer-to-employer hiring rate,decimal probability,National all-industry aggregate EEHireR with eligible publication flags,empty = missing; zero retained
+data/processed/native_quarterly.csv,COMP_GROWTH,Nonfarm business hourly compensation growth,year-over-year quarterly log growth times 100,100*(log(COMPNFB_t)-log(COMPNFB_(t-4))),empty = missing; zero retained
+data/processed/native_quarterly.csv,PRODUCTIVITY_GROWTH,Nonfarm business labor productivity growth,year-over-year quarterly log growth times 100,100*(log(OPHNFB_t)-log(OPHNFB_(t-4))),empty = missing; zero retained
+data/processed/native_quarterly.csv,ULC_GROWTH,Nonfarm business unit labor cost growth,year-over-year quarterly log growth times 100,100*(log(ULCNFB_t)-log(ULCNFB_(t-4))),empty = missing; zero retained
+data/processed/native_quarterly.csv,LS_NFB_INDEX,Nonfarm business labor share index,index 2017=100,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,date,Economic observation month or quarter,YYYY-MM or YYYYQn,"native calendar, no forecast lag",empty = missing; zero retained
+data/processed/data_monthly.csv,PAYROLL,Nonfarm payroll employment growth,monthly log growth times 100,100*(log(PAYEMS_t)-log(PAYEMS_(t-1))),empty = missing; zero retained
+data/processed/data_monthly.csv,UNEMP,Unemployment rate,percent,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,LFPR,Labor force participation rate,percent,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,JPR_PRIVATE_LONG,"Private-sector job posting rate, extended history",percent,100*V_private_long/(USPRIV+V_private_long),empty = missing; zero retained
+data/processed/data_monthly.csv,LMT_VU_LONG,"Change in log vacancy-unemployment ratio, extended history",monthly log change,log(V_long_t/UNEMPLOY_t)-log(V_long_(t-1)/UNEMPLOY_(t-1)),empty = missing; zero retained
+data/processed/data_monthly.csv,HIRES_PRIVATE_LONG,"Private-sector hiring rate, extended history",percent,Before 2000-12: DFH quarterly H_Rate/3 plus anchor level difference; thereafter JTS1000HIR,empty = missing; zero retained
+data/processed/data_monthly.csv,QUITS_PRIVATE_LONG,"Private-sector quits rate, extended history",percent,Before 2000-12: DFH quarterly Q_Rate/3 plus anchor level difference; thereafter JTS1000QUR,empty = missing; zero retained
+data/processed/data_monthly.csv,LIG_JW,Smoothed growth in per-capita personal income excluding dividends,percent,I=(PI-PDI)/POPTHM;100*((I_t+I_(t-1))/(I_(t-1)+I_(t-2))-1),empty = missing; zero retained
+data/processed/data_monthly.csv,CLAIMS_INTENSITY,Initial unemployment claims relative to lagged employment,percent,100*last_week(IC4WSA_t)/(1000*CE16OV_(t-1)),empty = missing; zero retained
+data/processed/data_monthly.csv,DP,Log dividend-price ratio,log ratio,log(D12)-log(Index),empty = missing; zero retained
+data/processed/data_monthly.csv,DY,Log dividend yield,log ratio,log(D12_t)-log(Index_(t-1)),empty = missing; zero retained
+data/processed/data_monthly.csv,EP,Log earnings-price ratio,log ratio,log(E12)-log(Index),empty = missing; zero retained
+data/processed/data_monthly.csv,DE,Log dividend-earnings ratio,log ratio,log(D12)-log(E12),empty = missing; zero retained
+data/processed/data_monthly.csv,BM,Book-to-market ratio,ratio,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,NTIS,Net equity issuance,provider ratio,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,TBL,Treasury bill rate,annualized decimal rate,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,LTY,Long-term government bond yield,annualized decimal rate,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,TMS,Term yield spread,annualized decimal spread,lty-tbl,empty = missing; zero retained
+data/processed/data_monthly.csv,DFY,Default yield spread,annualized decimal spread,BAA-AAA,empty = missing; zero retained
+data/processed/data_monthly.csv,LTR,Long-term government bond return,"monthly simple return, decimal",Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,DFR,Default return spread,"monthly return difference, decimal",corpr-ltr,empty = missing; zero retained
+data/processed/data_monthly.csv,SVAR,Stock return variance,provider variance scale,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,INFL,Inflation,monthly decimal rate,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,MARKET_EXCESS_LOG_RETURN,S&P monthly excess log return,monthly log-return percentage points,100*native MARKET_EXCESS_LOG_RETURN,empty = missing; zero retained
+data/processed/data_monthly.csv,EPR,Employment-population ratio,percent,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,LOG_VU_LONG,"Log vacancy-unemployment ratio, extended history",log ratio,log(V_long/UNEMPLOY),empty = missing; zero retained
+data/processed/data_monthly.csv,CPS_UE,Unemployment-to-employment transition probability,percent,100*UE/(UE+UU+UN),empty = missing; zero retained
+data/processed/data_monthly.csv,WGT_SWITCHER,Job-switcher wage growth,percent,Provider data_overall column J,empty = missing; zero retained
+data/processed/data_monthly.csv,WGT_STAYER,Job-stayer wage growth,percent,Provider data_overall column I,empty = missing; zero retained
+data/processed/data_monthly.csv,WGT_SPREAD,Switcher-stayer wage growth spread,percentage points,WGT_SWITCHER-WGT_STAYER,empty = missing; zero retained
+data/processed/data_monthly.csv,USREC,NBER recession indicator,binary 0/1,Provider column,empty = missing; zero retained
+data/processed/data_monthly.csv,EE,Manuscript employer mobility measure,decimal probability,FMP_SA_3MA; quarterly value is mean of three valid months,empty = missing; zero retained
+data/processed/data_quarterly.csv,date,Economic observation month or quarter,YYYY-MM or YYYYQn,"native calendar, no forecast lag",empty = missing; zero retained
+data/processed/data_quarterly.csv,LEHD_EEHireR,LEHD employer-to-employer hiring rate,percent,100*native LEHD_EEHireR,empty = missing; zero retained
+data/processed/data_quarterly.csv,LS_NFB_INDEX,Nonfarm business labor share index,index 2017=100,Provider column,empty = missing; zero retained
+data/processed/data_quarterly.csv,EE,Manuscript employer mobility measure,decimal probability,FMP_SA_3MA; quarterly value is mean of three valid months,empty = missing; zero retained
+data/processed/data_quarterly.csv,USREC,NBER recession indicator,binary 0/1,Provider column,empty = missing; zero retained
+data/processed/data_splice_parameters.csv,variable,Variable identifier,string,data_dictionary.csv,empty = missing; zero retained
+data/processed/data_splice_parameters.csv,parameter,Splice parameter type,string,private_vacancy_scale or level_shift,empty = missing; zero retained
+data/processed/data_splice_parameters.csv,value,Calculated splice parameter,ratio or percentage points,anchor matching from raw source observations,empty = missing; zero retained
+data/processed/data_splice_parameters.csv,anchor,Splice anchor month,YYYY-MM,December 2000,empty = missing; zero retained
+results/data_descriptive.csv,variable,Variable identifier,string,data_dictionary.csv,empty = missing; zero retained
+results/data_descriptive.csv,name,Display variable name,string,config/data_descriptive_registry.csv,empty = missing; zero retained
+results/data_descriptive.csv,panel,Exhibit panel identifier,string,registered panel,empty = missing; zero retained
+results/data_descriptive.csv,n,Valid observations,count,effective sample after required fields complete,empty = missing; zero retained
+results/data_descriptive.csv,start,Effective sample boundary: start,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_descriptive.csv,end,Effective sample boundary: end,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_descriptive.csv,mean,Descriptive mean,variable unit; E2E percent,"own nonmissing sample; quantiles linear, SD ddof=1",empty = missing; zero retained
+results/data_descriptive.csv,median,Descriptive median,variable unit; E2E percent,"own nonmissing sample; quantiles linear, SD ddof=1",empty = missing; zero retained
+results/data_descriptive.csv,p01,Descriptive p01,variable unit; E2E percent,"own nonmissing sample; quantiles linear, SD ddof=1",empty = missing; zero retained
+results/data_descriptive.csv,p99,Descriptive p99,variable unit; E2E percent,"own nonmissing sample; quantiles linear, SD ddof=1",empty = missing; zero retained
+results/data_descriptive.csv,sd,Descriptive sd,variable unit; E2E percent,"own nonmissing sample; quantiles linear, SD ddof=1",empty = missing; zero retained
+results/data_descriptive.csv,ac1,One-month autocorrelation,correlation,"calendar lag 1, pairwise valid",empty = missing; zero retained
+results/data_descriptive.csv,ac12,Twelve-month autocorrelation,correlation,"calendar lag 12, pairwise valid",empty = missing; zero retained
+results/data_descriptive.csv,corr_e2e,Contemporaneous Pearson correlation with EE,correlation,pairwise valid sample,empty = missing; zero retained
+results/data_descriptive.csv,corr_n,Common EE/variable observations,count,pairwise complete contemporaneous sample,empty = missing; zero retained
+results/data_descriptive.csv,corr_start,Effective sample boundary: corr_start,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_descriptive.csv,corr_end,Effective sample boundary: corr_end,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_descriptive.csv,report_multiplier,Multiplier for displayed statistics,scale factor,display conventions only; estimates unchanged,empty = missing; zero retained
+results/data_descriptive.csv,status,Successful estimation status,string,OK for all reported rows,empty = missing; zero retained
+results/data_relations.csv,target,Outcome variable identifier,string,data_dictionary.csv,empty = missing; zero retained
+results/data_relations.csv,frequency,Observation frequency,M or Q,monthly or quarterly,empty = missing; zero retained
+results/data_relations.csv,panel,Exhibit panel identifier,string,registered panel,empty = missing; zero retained
+results/data_relations.csv,horizon,Native-frequency horizon,months or quarters,future outcome offset,empty = missing; zero retained
+results/data_relations.csv,horizon_months,Horizon in months,months,quarterly horizon times three,empty = missing; zero retained
+results/data_relations.csv,specification,Regression specification,category,"contemporaneous, next, conditional",empty = missing; zero retained
+results/data_relations.csv,beta,EE slope,standardized dependent units per EE SD,OLS slope,empty = missing; zero retained
+results/data_relations.csv,t_nw,EE slope t statistic,dimensionless,beta/se_nw,empty = missing; zero retained
+results/data_relations.csv,p,EE slope two-sided probability,probability,"2*Student-t survival(abs(t_nw),N-K)",empty = missing; zero retained
+results/data_relations.csv,r2,Unadjusted explained variance,percent,100*(1-SSE/TSS),empty = missing; zero retained
+results/data_relations.csv,n,Valid observations,count,effective sample after required fields complete,empty = missing; zero retained
+results/data_relations.csv,start,Effective sample boundary: start,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_relations.csv,end,Effective sample boundary: end,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_relations.csv,target_start,Effective sample boundary: target_start,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_relations.csv,target_end,Effective sample boundary: target_end,YYYY-MM or YYYYQn,first/last valid observation; target boundary includes horizon,empty = missing; zero retained
+results/data_relations.csv,intercept,Regression intercept,standardized dependent units,OLS intercept,empty = missing; zero retained
+results/data_relations.csv,se_nw,EE slope HAC standard error,same as beta,"calendar Bartlett NW covariance, N/(N-K)",empty = missing; zero retained
+results/data_relations.csv,gamma,Current-outcome control slope,standardized dependent units per current-outcome SD,conditional models only,empty = missing; zero retained
+results/data_relations.csv,gamma_t_nw,Control slope t statistic,dimensionless,gamma/HAC standard error,empty = missing; zero retained
+results/data_relations.csv,gamma_p,Control slope two-sided probability,probability,Student-t(N-K),empty = missing; zero retained
+results/data_relations.csv,hac_lag,HAC bandwidth,native periods,12 monthly or 4 quarterly,empty = missing; zero retained
+results/data_relations.csv,k,Number of fitted coefficients,count,includes intercept,empty = missing; zero retained
+results/data_relations.csv,df,Inference degrees of freedom,count,N-K,empty = missing; zero retained
+results/data_relations.csv,correction,Covariance finite-sample factor,ratio,N/(N-K),empty = missing; zero retained
+results/data_relations.csv,adj_r2,Adjusted explained variance,percent,100*(1-(1-R2)*(N-1)/(N-K)),empty = missing; zero retained
+results/data_relations.csv,status,Successful estimation status,string,OK for all reported rows,empty = missing; zero retained
+results/data_relations.csv,ee_mean,Regression sample scale: ee_mean,raw variable unit,mean or sample SD ddof=1 in model valid sample,empty = missing; zero retained
+results/data_relations.csv,ee_sd,Regression sample scale: ee_sd,raw variable unit,mean or sample SD ddof=1 in model valid sample,empty = missing; zero retained
+results/data_relations.csv,outcome_mean,Regression sample scale: outcome_mean,raw variable unit,mean or sample SD ddof=1 in model valid sample,empty = missing; zero retained
+results/data_relations.csv,outcome_sd,Regression sample scale: outcome_sd,raw variable unit,mean or sample SD ddof=1 in model valid sample,empty = missing; zero retained
+results/data_relations.csv,current_mean,Regression sample scale: current_mean,raw variable unit,mean or sample SD ddof=1 in model valid sample,empty = missing; zero retained
+results/data_relations.csv,current_sd,Regression sample scale: current_sd,raw variable unit,mean or sample SD ddof=1 in model valid sample,empty = missing; zero retained
+results/data_relations.csv,current_only_r2,Current-outcome-only explained variance,percent,same conditional sample,empty = missing; zero retained
+results/data_relations.csv,ee_only_r2,EE-only explained variance,percent,same conditional sample,empty = missing; zero retained
+results/data_relations.csv,incremental_r2,Incremental R-squared from adding EE,percentage points,joint R2-current-only R2,empty = missing; zero retained
+results/data_relations.csv,partial_r2,Partial R-squared from adding EE,percent,100*(SSE_current-SSE_joint)/SSE_current,empty = missing; zero retained
+results/data_relation_ledger.csv,origin,Regressor economic month/quarter,YYYY-MM or YYYYQn,current observation t,empty = missing; zero retained
+results/data_relation_ledger.csv,ee_raw,Employer mobility before model standardization,decimal probability,EE_t,empty = missing; zero retained
+results/data_relation_ledger.csv,outcome_raw,Future dependent variable before standardization,target native unit (LEHD percent),target at t+h,empty = missing; zero retained
+results/data_relation_ledger.csv,current_raw,Contemporaneous dependent variable before standardization,target native unit (LEHD percent),target at t,empty = missing; zero retained
+results/data_relation_ledger.csv,ee_z,Standardized EE,standard deviations,(ee_raw-model sample mean)/model sample SD,empty = missing; zero retained
+results/data_relation_ledger.csv,outcome_z,Standardized dependent variable,standard deviations,(outcome_raw-model sample mean)/model sample SD,empty = missing; zero retained
+results/data_relation_ledger.csv,current_z,Standardized contemporaneous control,standard deviations,conditional specification only; sample SD ddof=1,empty = missing; zero retained
+results/data_relation_ledger.csv,ordinal,Integer calendar position,period ordinal,pandas PeriodIndex.asi8; used for exact HAC lag matching,empty = missing; zero retained
+results/data_relation_ledger.csv,outcome_date,Outcome month/quarter,YYYY-MM or YYYYQn,origin plus native-frequency horizon,empty = missing; zero retained
+results/data_relation_ledger.csv,target,Outcome variable identifier,string,data_dictionary.csv,empty = missing; zero retained
+results/data_relation_ledger.csv,frequency,Observation frequency,M or Q,monthly or quarterly,empty = missing; zero retained
+results/data_relation_ledger.csv,horizon,Native-frequency horizon,months or quarters,future outcome offset,empty = missing; zero retained
+results/data_relation_ledger.csv,specification,Regression specification,category,"contemporaneous, next, conditional",empty = missing; zero retained
+results/data_relation_ledger.csv,fitted,Fitted standardized dependent variable,standard deviations,OLS design times coefficients,empty = missing; zero retained
+results/data_relation_ledger.csv,residual,Regression residual,standard deviations,outcome_z-fitted,empty = missing; zero retained
+results/data_figure_monthly.csv,date,Economic observation month or quarter,YYYY-MM or YYYYQn,"native calendar, no forecast lag",empty = missing; zero retained
+results/data_figure_monthly.csv,EE,Manuscript employer mobility measure,decimal probability,FMP_SA_3MA; quarterly value is mean of three valid months,empty = missing; zero retained
+results/data_figure_monthly.csv,USREC,NBER recession indicator,binary 0/1,Provider column,empty = missing; zero retained
+results/data_figure_monthly.csv,EE_percent,Employer mobility for graph display,percent,100*EE,empty = missing; zero retained
+results/data_figure_quarterly.csv,date,Economic observation month or quarter,YYYY-MM or YYYYQn,"native calendar, no forecast lag",empty = missing; zero retained
+results/data_figure_quarterly.csv,EE,Manuscript employer mobility measure,decimal probability,FMP_SA_3MA; quarterly value is mean of three valid months,empty = missing; zero retained
+results/data_figure_quarterly.csv,LEHD_EEHireR,LEHD employer-to-employer hiring rate,percent,100*native LEHD_EEHireR,empty = missing; zero retained
+results/data_figure_quarterly.csv,USREC,NBER recession indicator,binary 0/1,Provider column,empty = missing; zero retained
+results/data_figure_quarterly.csv,available,Complete joint graph observation,boolean,all displayed series nonmissing,empty = missing; zero retained
+results/data_figure_quarterly.csv,EE_z,Joint-sample standardized EE,standard deviations,"Within complete displayed sample, subtract mean and divide by sample SD ddof=1",empty = missing; zero retained
+results/data_figure_quarterly.csv,LEHD_EEHireR_z,Joint-sample standardized LEHD_EEHireR,standard deviations,"Within complete displayed sample, subtract mean and divide by sample SD ddof=1",empty = missing; zero retained
+results/data_figure_quarterly.csv,EE_percent,Employer mobility for graph display,percent,100*EE,empty = missing; zero retained
+results/data_figure_quarterly.csv,plot_date,Plotting timestamp,ISO date,first date of economic month/quarter,empty = missing; zero retained
+results/data_figure_wages.csv,date,Economic observation month or quarter,YYYY-MM or YYYYQn,"native calendar, no forecast lag",empty = missing; zero retained
+results/data_figure_wages.csv,EE,Manuscript employer mobility measure,decimal probability,FMP_SA_3MA; quarterly value is mean of three valid months,empty = missing; zero retained
+results/data_figure_wages.csv,WGT_SWITCHER,Job-switcher wage growth,percent,Provider data_overall column J,empty = missing; zero retained
+results/data_figure_wages.csv,WGT_STAYER,Job-stayer wage growth,percent,Provider data_overall column I,empty = missing; zero retained
+results/data_figure_wages.csv,USREC,NBER recession indicator,binary 0/1,Provider column,empty = missing; zero retained
+results/data_figure_wages.csv,available,Complete joint graph observation,boolean,all displayed series nonmissing,empty = missing; zero retained
+results/data_figure_wages.csv,EE_z,Joint-sample standardized EE,standard deviations,"Within complete displayed sample, subtract mean and divide by sample SD ddof=1",empty = missing; zero retained
+results/data_figure_wages.csv,WGT_SWITCHER_z,Joint-sample standardized WGT_SWITCHER,standard deviations,"Within complete displayed sample, subtract mean and divide by sample SD ddof=1",empty = missing; zero retained
+results/data_figure_wages.csv,WGT_STAYER_z,Joint-sample standardized WGT_STAYER,standard deviations,"Within complete displayed sample, subtract mean and divide by sample SD ddof=1",empty = missing; zero retained
+results/data_figure_wages.csv,EE_percent,Employer mobility for graph display,percent,100*EE,empty = missing; zero retained
+results/data_figure_wages.csv,plot_date,Plotting timestamp,ISO date,first date of economic month/quarter,empty = missing; zero retained

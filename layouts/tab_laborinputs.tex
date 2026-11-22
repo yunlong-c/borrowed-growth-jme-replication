@@ -1,0 +1,35 @@
+\begin{table}[!htbp]\caption{Wages, Labor Costs, and Productivity}\label{tab:laborinputs}\fontsize{11}{12}\selectfont\noindent\begin{tabular}{@{}L{112pt}C{52pt}C{42pt}@{\hspace{14pt}}C{62pt}C{62pt}C{62pt}C{62pt}@{}}\toprule
+\multicolumn{7}{l}{\textit{Panel A: Wage Growth and Labor Share}}\\*
+ & \multicolumn{2}{c}{Contemporaneous} & \multicolumn{4}{c}{Conditional dynamics}\\\cmidrule(lr){2-3}\cmidrule(lr){4-7}
+Outcome & $\hat\beta$ & $R^2$ & $h=1$m & $h=3$m & $h=6$m & $h=12$m\\\midrule
+Switcher wages & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[-1pt]
+ & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[2pt]
+Stayer wages & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[-1pt]
+ & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[2pt]
+Wage growth gap & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[-1pt]
+ & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[2pt]
+Labor share & 0.00 & 0.00 & \textemdash & 0.00 & 0.00 & 0.00\\[-1pt]
+ & (0.00) &  &  & (0.00) & (0.00) & (0.00)\\[2pt]
+\bottomrule\end{tabular}\par\vspace{10pt}\noindent\begin{tabular}{@{}L{112pt}C{56pt}C{56pt}C{56pt}@{\hspace{20pt}}C{56pt}C{56pt}C{56pt}@{}}
+\midrule\multicolumn{7}{l}{\textit{Panel B: Production Growth (quarters)}}\\*
+ & \multicolumn{3}{c}{Baseline} & \multicolumn{3}{c}{With past growth}\\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Outcome & $h=1$ & $h=2$ & $h=4$ & $h=1$ & $h=2$ & $h=4$\\\midrule
+Hourly compensation & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[-1pt]
+ & (0.00) & (0.00) & (0.00) & (0.00) & (0.00) & (0.00)\\[2pt]
+Hourly productivity & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[-1pt]
+ & (0.00) & (0.00) & (0.00) & (0.00) & (0.00) & (0.00)\\[2pt]
+Unit labor costs & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[-1pt]
+ & (0.00) & (0.00) & (0.00) & (0.00) & (0.00) & (0.00)\\[2pt]
+\bottomrule\end{tabular}\par\vspace{7pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}\setlength{\abovedisplayshortskip}{3pt}\setlength{\belowdisplayshortskip}{3pt}\textit{Notes:} Panel A reports the ordinary least squares estimates of $\beta$ and $\beta_h$ for the contemporaneous and conditional regression models
+\[
+z_t^Z=\alpha+\beta z_t^{EE}+\varepsilon_t,
+\]
+and
+\[
+z_{t+h}^Z=\alpha_h+\beta_h z_t^{EE}+\gamma_h z_t^Z+\varepsilon_{t+h},
+\]
+respectively, where $z_t^Z$ and $z_t^{EE}$ denote the standardized outcome and employer-to-employer mobility. Wage-growth measures are monthly, while labor share is quarterly; for labor share, $h=3,6,$ and $12$ months correspond to one, two, and four quarters, respectively. Panel B reports the ordinary least squares estimates of $\beta_h$ for the predictive regression
+\[
+100\log(Y_{q+h}/Y_q)=\alpha_h+\beta_h z_q^{EE}+\varepsilon_{q+h},
+\]
+where $Y_q$ is quarterly compensation per hour, output per hour or unit labor costs, and $z_q^{EE}$ is standardized quarterly EE mobility. The specifications labeled ``With past growth'' additionally control for past four-quarter growth. Quarterly EE is the average of the three monthly observations in quarter $q$. Panel A coefficients are in outcome standard deviations per one-standard-deviation increase in EE; Panel B coefficients are cumulative log-growth percentage points per one-standard-deviation increase in EE. Parentheses report Newey--West $t$-statistics using 12 monthly lags for monthly regressions and four quarterly lags for quarterly regressions. *, **, and *** denote significance at the 10\%, 5\%, and 1\% levels, respectively.\par\end{minipage}\end{table}

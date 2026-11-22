@@ -1,0 +1,333 @@
+{
+  "date_column": "date",
+  "market_column": "MARKET_SIMPLE_RETURN",
+  "measure_column": "E2E",
+  "dp_column": "DP",
+  "sample_start": "1995-11",
+  "sample_end": "2025-12",
+  "pca_inputs": [
+    "DP",
+    "DY",
+    "EP",
+    "BM",
+    "NTIS",
+    "TBL",
+    "LTY",
+    "DFY",
+    "LTR",
+    "DFR",
+    "SVAR",
+    "INFL"
+  ],
+  "pca_components": 3,
+  "additional_states": [
+    "DY",
+    "EP",
+    "BM",
+    "NTIS",
+    "TBL",
+    "LTY",
+    "TMS",
+    "DFY",
+    "LTR",
+    "DFR",
+    "SVAR",
+    "INFL",
+    "PAYROLL",
+    "UNEMP",
+    "LFPR",
+    "JPR_PRIVATE_LONG",
+    "LMT_VU_LONG",
+    "HIRES_PRIVATE_LONG",
+    "QUITS_PRIVATE_LONG",
+    "LIG_JW",
+    "CLAIMS_INTENSITY"
+  ],
+  "state_labels": {
+    "DY": "DY",
+    "EP": "EP",
+    "BM": "BM",
+    "NTIS": "NTIS",
+    "TBL": "TBL",
+    "LTY": "LTY",
+    "TMS": "TMS",
+    "DFY": "DFY",
+    "LTR": "LTR",
+    "DFR": "DFR",
+    "SVAR": "SVAR",
+    "INFL": "INFL",
+    "PAYROLL": "Payroll",
+    "UNEMP": "Unemp",
+    "LFPR": "LFPR",
+    "JPR_PRIVATE_LONG": "JPR",
+    "LMT_VU_LONG": "LMT",
+    "HIRES_PRIVATE_LONG": "Hires",
+    "QUITS_PRIVATE_LONG": "Quits",
+    "LIG_JW": "LIG",
+    "CLAIMS_INTENSITY": "Claims"
+  },
+  "systems": [
+    {
+      "id": "BASE",
+      "label": "r, DP",
+      "states": [
+        "r",
+        "dp"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "DY",
+      "label": "r, DP, DY",
+      "states": [
+        "r",
+        "dp",
+        "DY"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "EP",
+      "label": "r, DP, EP / DE",
+      "states": [
+        "r",
+        "dp",
+        "EP"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "BM",
+      "label": "r, DP, BM",
+      "states": [
+        "r",
+        "dp",
+        "BM"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "NTIS",
+      "label": "r, DP, NTIS",
+      "states": [
+        "r",
+        "dp",
+        "NTIS"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "TBL",
+      "label": "r, DP, TBL",
+      "states": [
+        "r",
+        "dp",
+        "TBL"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "LTY",
+      "label": "r, DP, LTY",
+      "states": [
+        "r",
+        "dp",
+        "LTY"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "TERM",
+      "label": "r, DP, TMS",
+      "states": [
+        "r",
+        "dp",
+        "TMS"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "DFY",
+      "label": "r, DP, DFY",
+      "states": [
+        "r",
+        "dp",
+        "DFY"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "LTR",
+      "label": "r, DP, LTR",
+      "states": [
+        "r",
+        "dp",
+        "LTR"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "DFR",
+      "label": "r, DP, DFR",
+      "states": [
+        "r",
+        "dp",
+        "DFR"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "SVAR",
+      "label": "r, DP, SVAR",
+      "states": [
+        "r",
+        "dp",
+        "SVAR"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "INFL",
+      "label": "r, DP, INFL",
+      "states": [
+        "r",
+        "dp",
+        "INFL"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "PC3",
+      "label": "r, DP, PC1-3",
+      "states": [
+        "r",
+        "dp",
+        "PC1",
+        "PC2",
+        "PC3"
+      ],
+      "group": "Financial",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "PAYROLL",
+      "label": "r, DP, Payroll",
+      "states": [
+        "r",
+        "dp",
+        "PAYROLL"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "UNEMP",
+      "label": "r, DP, Unemp",
+      "states": [
+        "r",
+        "dp",
+        "UNEMP"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "LFPR",
+      "label": "r, DP, LFPR",
+      "states": [
+        "r",
+        "dp",
+        "LFPR"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "JPR_PRIVATE_LONG",
+      "label": "r, DP, JPR",
+      "states": [
+        "r",
+        "dp",
+        "JPR_PRIVATE_LONG"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "LMT_VU_LONG",
+      "label": "r, DP, LMT",
+      "states": [
+        "r",
+        "dp",
+        "LMT_VU_LONG"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "HIRES_PRIVATE_LONG",
+      "label": "r, DP, Hires",
+      "states": [
+        "r",
+        "dp",
+        "HIRES_PRIVATE_LONG"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "QUITS_PRIVATE_LONG",
+      "label": "r, DP, Quits",
+      "states": [
+        "r",
+        "dp",
+        "QUITS_PRIVATE_LONG"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "LIG_JW",
+      "label": "r, DP, LIG",
+      "states": [
+        "r",
+        "dp",
+        "LIG_JW"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    },
+    {
+      "id": "CLAIMS_INTENSITY",
+      "label": "r, DP, Claims",
+      "states": [
+        "r",
+        "dp",
+        "CLAIMS_INTENSITY"
+      ],
+      "group": "Labor",
+      "action": "ESTIMATE"
+    }
+  ],
+  "rho_rule": "monthly_dp",
+  "projection_intercepts": {
+    "expected": true,
+    "cash_flow": true,
+    "discount_rate": true
+  },
+  "hac_lag": 1,
+  "finite_sample_correction": false
+}

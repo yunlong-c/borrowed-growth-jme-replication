@@ -1,0 +1,33 @@
+\begin{table}[H]
+\caption{Long-Horizon Cash-Flow Predictability}\label{tab:C_cash_long}
+\fontsize{10}{12}\selectfont\noindent\begin{tabular}{@{}L{22pt}L{115pt}C{44pt}C{33pt}C{32pt}C{34pt}C{44pt}C{33pt}C{32pt}C{34pt}C{45pt}@{}}
+\toprule
+ &  & \multicolumn{4}{c}{Earnings growth} & \multicolumn{4}{c}{Dividend growth} & \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+$h$ & Specification & Estimate & $t_{NW}$ & $p$ & $R^2$ & Estimate & $t_{NW}$ & $p$ & $R^2$ & $N$\\
+\midrule\multicolumn{11}{@{}l@{}}{\textit{Panel A: Cumulative growth}}\\[2pt]
+24 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+24 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+36 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+36 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+48 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+48 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+60 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+60 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+\midrule\multicolumn{11}{@{}l@{}}{\textit{Panel B: Growth after the first year}}\\[2pt]
+24 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+24 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+36 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+36 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+48 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+48 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+60 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+60 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+\bottomrule\end{tabular}
+\par\vspace{6pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{2pt}\setlength{\belowdisplayskip}{2pt}
+\setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}
+\textit{Notes:} This table reports ordinary least squares estimates of $\beta_h$ for long-horizon cash-flow predictive regressions
+\[g_{t,h}^{w}=\alpha_h+\beta_h z_{t-1}^{EE}+\gamma_h g_t^-+\varepsilon_{t,h},\]
+where $C_t$ is nominal trailing-twelve-month S\&P 500 earnings or dividends, $z_{t-1}^{EE}$ is standardized EE mobility lagged one month, and $g_t^-=100\log(C_t/C_{t-12})$. The cumulative-growth target is $g_{t,h}^{cum}=100\log(C_{t+h}/C_t)$, while the after-first-year target is $g_{t,h}^{post}=100\log(C_{t+h}/C_{t+12})$. In both cases, $h=24,36,48,60$ denotes the endpoint in months from the original forecast origin. The EE-only model omits past growth; the controlled model includes it. Both specifications use common valid origins within each outcome, window, and horizon. The reported EE coefficient is in cumulative log-growth percentage points per one-standard-deviation increase in mobility. The $t_{NW}$ columns use Newey--West standard errors with $h$ monthly lags for both target definitions, and $p$ reports two-sided Student-$t$ probabilities. $R^2$ is reported in percent, and $N$ is the number of observations. $^{*}$, $^{**}$, and $^{***}$ denote significance at the 10\%, 5\%, and 1\% levels. Appendix \ref{app:cash-long} provides the sample and inference details.\par\end{minipage}
+\end{table}

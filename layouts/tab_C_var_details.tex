@@ -1,0 +1,39 @@
+\begin{table}[H]
+\caption{Predictive Regression Fit for Total Returns and Return Components}\label{tab:C_var_details}
+\fontsize{10}{11}\selectfont\noindent\begin{tabular}{@{}L{168pt}C{40pt}C{61pt}C{49pt}C{61pt}C{49pt}C{61pt}C{49pt}C{61pt}C{49pt}@{}}
+\toprule
+ &  & \multicolumn{2}{c}{Total return} & \multicolumn{2}{c}{Expected return} & \multicolumn{2}{c}{Cash-flow news} & \multicolumn{2}{c}{Discount-rate news}\\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+VAR specification & $N$ & $R^2$ (\%) & $p$ & $R^2$ (\%) & $p$ & $R^2$ (\%) & $p$ & $R^2$ (\%) & $p$\\
+\midrule
+Baseline (r, DP) & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, DY & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, EP / DE & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, BM & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, NTIS & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, TBL & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, LTY & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, TMS & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, DFY & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, LTR & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, DFR & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, SVAR & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, INFL & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, PC1--3 & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, Payroll & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, Unemp & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, LFPR & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, JPR & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, LMT & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, Hires & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, Quits & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, LIG & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+r, DP, Claims & 0 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000 & 0.00 & 0.000\\[1pt]
+\bottomrule\end{tabular}
+\par\vspace{6pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{2pt}\setlength{\belowdisplayskip}{2pt}
+\setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}
+\textit{Notes:} This table reports $R^2$ statistics and slope-test $p$-values for predictive regressions
+\[y_{t+1}=\alpha_y+\beta_y z_t^{EE}+\varepsilon_{t+1},\]
+where $y_{t+1}$ is the total log market return, expected return, cash-flow news, or discount-rate news, expressed in percentage points, and $z_t^{EE}$ is standardized EE mobility in economic month $t$. Return components are obtained from the \citet{Campbell1991} VAR decomposition. Each VAR contains the total return and the log dividend--price ratio, together with the additional variable or principal components identified in the first column. PC1--3 are the first three principal components of the twelve financial predictors excluding DE and TMS; EP and DE span the same information set conditional on DP. Within each VAR specification, all four predictive regressions use the same valid origins and EE scale. The reported $R^2$ values measure the fit of these EE regressions and are expressed in percent. The $p$-values test $\beta_y=0$ using Newey--West standard errors with one monthly lag and a two-sided normal approximation. $N$ is the number of projection observations. The slope coefficients satisfy $\beta_r=\beta_{ER}+\beta_{CF}-\beta_{DR}$. Appendix \ref{app:var} provides the component construction and sample details.\par\end{minipage}
+\end{table}

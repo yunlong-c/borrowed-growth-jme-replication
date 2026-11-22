@@ -1,0 +1,28 @@
+\begin{table}[H]
+\caption{Out-of-Sample Dividend-Growth Forecasts with Past-Growth Controls}\label{tab:C_cash_oos}
+\fontsize{10}{12}\selectfont\noindent\begin{tabular}{@{}L{24pt}C{28pt}C{49pt}C{54pt}C{46pt}C{49pt}C{54pt}C{46pt}C{49pt}C{54pt}C{46pt}C{49pt}C{54pt}C{46pt}@{}}
+\toprule
+ &  & \multicolumn{3}{c}{EE vs. HA} & \multicolumn{3}{c}{Past growth vs. HA} & \multicolumn{3}{c}{EE + past growth vs. HA} & \multicolumn{3}{c}{EE + past growth vs. past growth}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}\cmidrule(lr){12-14}
+$h$ & $N$ & $R^2_{OS}$ & $t_{CW}$ & $p$ & $R^2_{OS}$ & $t_{CW}$ & $p$ & $R^2_{OS}$ & $t_{CW}$ & $p$ & $R^2_{OS}$ & $t_{CW}$ & $p$\\
+\midrule\multicolumn{14}{@{}l@{}}{\textit{Panel A: Cumulative growth, 1--12 months}}\\[2pt]
+1 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+3 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+6 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+12 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+\midrule\multicolumn{14}{@{}l@{}}{\textit{Panel B: Cumulative growth, 24--60 months}}\\[2pt]
+24 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+36 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+48 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+60 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+\midrule\multicolumn{14}{@{}l@{}}{\textit{Panel C: Growth after the first year}}\\[2pt]
+24 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+36 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+48 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+60 & 0 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.000\\[3pt]
+\bottomrule\end{tabular}
+\par\vspace{6pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{2pt}\setlength{\belowdisplayskip}{2pt}
+\setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}
+\textit{Notes:} This table reports out-of-sample performance for dividend-growth forecasts based on EE, past annual dividend growth, or both predictors. Let $D_t$ denote nominal trailing-twelve-month S\&P 500 dividends. The cumulative target is $100\log(D_{t+h}/D_t)$, and the after-first-year target is $100\log(D_{t+h}/D_{t+12})$; $h$ denotes the endpoint in months from the forecast origin. Past growth is $100\log(D_t/D_{t-12})$, and the EE signal is lagged one month. EE + past growth denotes the model containing both predictors. Forecast origins begin in December 2009. Expanding regressions use only completed target windows, with EE standardized within the common training sample. The historical-average (HA) benchmark is the mean of the same growth target over that sample. Each model is compared with HA, and the EE + past growth forecast is additionally compared with the past-growth-only forecast. $R^2_{OS}$ is the percentage reduction in unadjusted mean squared forecast error relative to the indicated benchmark. The $t_{CW}$ and $p$ columns report the MSFE-adjusted Clark--West statistic and its one-sided probability, using a horizon-$h$ HAC estimate for both target windows. $N$ is the number of evaluated forecasts. $^{*}$, $^{**}$, and $^{***}$ denote significance at the 10\%, 5\%, and 1\% levels. Appendix \ref{app:cash-oos} provides the recursive evaluation details.\par\end{minipage}
+\end{table}

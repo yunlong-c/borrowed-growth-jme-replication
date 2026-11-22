@@ -1,0 +1,30 @@
+file,sheet,date_field,value_fields,rows,first_date,last_date,missing_values
+data/raw/descriptive/CE16OV.csv,,observation_date,CE16OV,944.0,1948-01-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/CIVPART.csv,,observation_date,CIVPART,944.0,1948-01-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/COMPNFB.csv,,observation_date,COMPNFB,318.0,1947-01-01,2026-04-01,provider dot or empty; read as NaN
+data/raw/descriptive/EMRATIO.csv,,observation_date,EMRATIO,944.0,1948-01-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/IC4WSA.csv,,observation_date,IC4WSA,3112.0,1967-01-28,2026-09-12,provider dot or empty; read as NaN
+data/raw/descriptive/JTS1000HIR.csv,,observation_date,JTS1000HIR,308.0,2000-12-01,2026-07-01,provider dot or empty; read as NaN
+data/raw/descriptive/JTS1000JOL.csv,,observation_date,JTS1000JOL,308.0,2000-12-01,2026-07-01,provider dot or empty; read as NaN
+data/raw/descriptive/JTS1000QUR.csv,,observation_date,JTS1000QUR,308.0,2000-12-01,2026-07-01,provider dot or empty; read as NaN
+data/raw/descriptive/JTSJOL.csv,,observation_date,JTSJOL,308.0,2000-12-01,2026-07-01,provider dot or empty; read as NaN
+data/raw/descriptive/LNS17100000.csv,,observation_date,LNS17100000,439.0,1990-02-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/LNS17500000.csv,,observation_date,LNS17500000,439.0,1990-02-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/LNS17900000.csv,,observation_date,LNS17900000,439.0,1990-02-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/OPHNFB.csv,,observation_date,OPHNFB,318.0,1947-01-01,2026-04-01,provider dot or empty; read as NaN
+data/raw/descriptive/PAYEMS.csv,,observation_date,PAYEMS,1052.0,1939-01-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/PDI.csv,,observation_date,PDI,811.0,1959-01-01,2026-07-01,provider dot or empty; read as NaN
+data/raw/descriptive/PI.csv,,observation_date,PI,811.0,1959-01-01,2026-07-01,provider dot or empty; read as NaN
+data/raw/descriptive/POPTHM.csv,,observation_date,POPTHM,811.0,1959-01-01,2026-07-01,provider dot or empty; read as NaN
+data/raw/descriptive/PRS85006173.csv,,observation_date,PRS85006173,318.0,1947-01-01,2026-04-01,provider dot or empty; read as NaN
+data/raw/descriptive/ULCNFB.csv,,observation_date,ULCNFB,318.0,1947-01-01,2026-04-01,provider dot or empty; read as NaN
+data/raw/descriptive/UNEMPLOY.csv,,observation_date,UNEMPLOY,944.0,1948-01-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/UNRATE.csv,,observation_date,UNRATE,944.0,1948-01-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/USPRIV.csv,,observation_date,USPRIV,1052.0,1939-01-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/USREC.csv,,observation_date,USREC,2061.0,1854-12-01,2026-08-01,provider dot or empty; read as NaN
+data/raw/descriptive/e2e-2026-08.xlsx,Data,"year, month",FMP_NSA;FMP_SA;FMP_SA_3MA,,,,blank
+data/raw/descriptive/PredictorData_updated.xlsx,Monthly,yyyymm (first column),D12;E12;Index;b/m;ntis;tbl;lty;BAA;AAA;ltr;corpr;svar;infl;CRSP_SPvw;Rfree,,,,blank
+data/raw/descriptive/barnichon_composite_hwi.xlsx,Sheet1,first column: decimal year,second column V_hwi,,,,blank
+data/raw/descriptive/DFH XS TS Synthetic JOLTS Series (1990-2010).xlsx,Data,first column YYYYQ,H_Rate (fourth column);Q_Rate (sixth column),,,,blank
+data/raw/descriptive/wage-growth-data.xlsx,data_overall,column A,I Job Stayer;J Job Switcher,,,,blank
+data/raw/descriptive/j2jr_us_d_f_gn_n_oslp_s.csv.gz,,year;quarter,EEHireR;sEEHireR;geography;industry;ownercode;sex;agegrp;race;ethnicity;education;firmage;firmsize,,,,"unpublished statuses removed; published flags1,6,7,9,10,12 retained"

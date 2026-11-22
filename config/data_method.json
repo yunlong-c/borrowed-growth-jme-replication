@@ -1,0 +1,15 @@
+{
+  "measure": "FMP_SA_3MA",
+  "vintage": "2026-08",
+  "input_measure_unit": "DECIMAL_PROBABILITY",
+  "figure_EE_percent_multiplier": 100,
+  "complete_quarter_months": 3,
+  "first_complete_quarter": "1996Q1",
+  "descriptive_rows": 25,
+  "relations": 46,
+  "bivariate": 16,
+  "conditional": 30,
+  "standardization": "within each regression; sample SD ddof=1",
+  "inference": "calendar Bartlett NW12 monthly / NW4 quarterly; N/(N-K); two-sided Student-t(N-K)",
+  "contemporaneous_measure_lag": 0
+}

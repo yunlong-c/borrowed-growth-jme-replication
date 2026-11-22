@@ -1,0 +1,28 @@
+\begin{table}[H]
+\caption{Out-of-Sample Return Forecasts under Alternative Specifications}\label{tab:B_forecast_robust}
+\fontsize{10.5}{12}\selectfont\noindent
+\begin{tabular}{@{}L{200pt}C{67pt}C{67pt}C{67pt}C{67pt}@{}}
+\toprule
+Specification & $h=1$ & $h=3$ & $h=6$ & $h=12$\\
+\midrule
+Baseline & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) & (0.00) & (0.00) & (0.00)\\[4pt]
+Evaluation from 2005 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) & (0.00) & (0.00) & (0.00)\\[4pt]
+Evaluation from 2015 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) & (0.00) & (0.00) & (0.00)\\[4pt]
+Estimation from 2000 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) & (0.00) & (0.00) & (0.00)\\[4pt]
+120-month rolling window & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) & (0.00) & (0.00) & (0.00)\\[4pt]
+Simple excess returns & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) & (0.00) & (0.00) & (0.00)\\[4pt]
+Nonnegative forecasts & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) & (0.00) & (0.00) & (0.00)\\[4pt]
+\bottomrule\end{tabular}
+\par\vspace{7pt}
+\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{3pt}\setlength{\belowdisplayshortskip}{3pt}
+\textit{Notes:} This table reports out-of-sample $R^2$ statistics for EE return forecasts under alternative evaluation periods, estimation samples, and forecasting restrictions. Evaluation-start specifications change the first forecast target year; the training-start specification changes the regression start date and the corresponding historical-average (HA) history. The rolling specification uses the most recent 120 completed estimation origins and a matching 120-month HA window. The simple-return specification forecasts average monthly simple excess returns, and the nonnegative specification sets negative return forecasts to zero. Except where indicated, the first target month is January 2010, and all target windows end by December 2025. $R^2_{OS}$ is the percentage reduction in unadjusted mean squared forecast error relative to the corresponding HA forecast. Parentheses report the MSFE-adjusted Clark--West statistic. $^{*}$, $^{**}$, and $^{***}$ denote significance at the 10\%, 5\%, and 1\% levels, respectively, based on the one-sided Clark--West test. Appendix \ref{app:B-robust} provides the implementation details.\par\end{minipage}
+\end{table}

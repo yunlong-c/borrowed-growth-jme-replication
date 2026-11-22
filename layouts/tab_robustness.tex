@@ -1,0 +1,17 @@
+\begin{table}[!htbp]\caption{Forecast and Portfolio Robustness}\label{tab:robustness}\fontsize{11}{12}\selectfont\noindent\begin{tabular}{@{}L{190pt}C{68pt}C{68pt}C{68pt}C{68pt}@{}}\toprule
+Specification & $h=1$ & $h=3$ & $h=6$ & $h=12$\\\midrule
+\multicolumn{5}{l}{\textit{Panel A: Forecast Robustness ($R^2_{OS}$, percent)}}\\*
+Baseline & 0.00 & 0.00 & 0.00 & 0.00\\
+OOS from 2005 & 0.00 & 0.00 & 0.00 & 0.00\\
+OOS from 2015 & 0.00 & 0.00 & 0.00 & 0.00\\
+Training from 2000 & 0.00 & 0.00 & 0.00 & 0.00\\
+Rolling 120 months & 0.00 & 0.00 & 0.00 & 0.00\\
+Simple excess returns & 0.00 & 0.00 & 0.00 & 0.00\\
+Nonnegative forecasts & 0.00 & 0.00 & 0.00 & 0.00\\
+\midrule\multicolumn{5}{l}{\textit{Panel B: Allocation Robustness (Annual CER Gain, percentage points)}}\\*
+Baseline & 0.00 & 0.00 & 0.00 & 0.00\\
+$\gamma=5$ & 0.00 & 0.00 & 0.00 & 0.00\\
+60 mature risk observations & 0.00 & 0.00 & 0.00 & 0.00\\
+50 bps transaction cost & 0.00 & 0.00 & 0.00 & 0.00\\
+100 bps transaction cost & 0.00 & 0.00 & 0.00 & 0.00\\
+\bottomrule\end{tabular}\par\vspace{7pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle\textit{Notes:} Panel A reports $R^2_{OS}$, in percent, for alternative specifications of the EE return forecast. Alternative evaluation and training start dates are indicated by the corresponding rows. The rolling specification uses the latest 120 monthly origins with completed return targets; its HA benchmark uses the latest 120 monthly returns. The simple-return specification forecasts average monthly simple excess returns, while the nonnegative specification truncates return forecasts at zero. Stars indicate significance in the one-sided MSFE-adjusted Clark--West test against HA. Panel B reports annual CER gains, in percentage points, for alternative implementations of the EE-based allocation strategy. CER gains are measured relative to HA under the same investment specification. The alternative rows vary risk aversion, the risk-estimation window, and one-way transaction costs of 50 or 100 basis points. Transaction costs are applied to drift-adjusted equity trades, including the initial allocation. The transaction-cost rows apply the stated cost rate to both strategies; the other rows report performance before transaction costs. Internet Appendix~\ref{app:predictive_design} reports the complete statistics and implementation details.\par\end{minipage}\end{table}

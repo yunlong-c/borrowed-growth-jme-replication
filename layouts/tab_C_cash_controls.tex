@@ -1,0 +1,28 @@
+\begin{table}[H]
+\caption{Cash-Flow Predictability with Past-Growth Controls}\label{tab:C_cash_controls}
+\fontsize{10}{12}\selectfont\noindent\begin{tabular}{@{}L{22pt}L{115pt}C{44pt}C{33pt}C{32pt}C{34pt}C{44pt}C{33pt}C{32pt}C{34pt}C{45pt}@{}}
+\toprule
+ &  & \multicolumn{4}{c}{Earnings growth} & \multicolumn{4}{c}{Dividend growth} & \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+$h$ & Specification & Estimate & $t_{NW}$ & $p$ & $R^2$ & Estimate & $t_{NW}$ & $p$ & $R^2$ & $N$\\
+\midrule
+1 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+1 & Past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+1 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+3 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+3 & Past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+3 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+6 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+6 & Past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+6 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+12 & EE & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+12 & Past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\
+12 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00 & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+\bottomrule\end{tabular}
+\par\vspace{6pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{2pt}\setlength{\belowdisplayskip}{2pt}
+\setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}
+\textit{Notes:} This table reports ordinary least squares estimates for cash-flow predictive regressions of the form
+\[g_{t,h}=\alpha_h+\beta_h z_{t-1}^{EE}+\gamma_h g_t^-+\varepsilon_{t,h},\]
+where $g_{t,h}=100\log(C_{t+h}/C_t)$, $g_t^-=100\log(C_t/C_{t-12})$, and $C_t$ is nominal trailing-twelve-month S\&P 500 earnings or dividends. The predictor $z_{t-1}^{EE}$ is standardized EE mobility lagged one month. The EE-only model omits past growth, the past-growth-only model omits EE, and the EE + past growth model includes both. The reported slope is $\beta_h$ in the models containing EE and $\gamma_h$ in the past-growth-only model. EE slopes measure cumulative log-growth percentage points per one-standard-deviation increase in mobility; past-growth slopes are per percentage point of past growth. All three models use common valid origins within each outcome and horizon. The $t_{NW}$ columns report Newey--West statistics with 12 monthly lags. The $p$ columns and coefficient stars use two-sided paired moving-block bootstrap probabilities based on centered studentized statistics, with 12-month blocks and 20,000 replications. $R^2$ is reported in percent, and $N$ is the number of regression observations. $^{*}$, $^{**}$, and $^{***}$ denote significance at the 10\%, 5\%, and 1\% levels. Appendix \ref{app:cash-controls} provides the bootstrap and sample details.\par\end{minipage}
+\end{table}

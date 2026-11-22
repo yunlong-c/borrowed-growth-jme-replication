@@ -1,0 +1,36 @@
+\begin{table}[H]
+\caption{EE Mobility and Labor-Market Outcomes}\label{tab:A_relations}
+\fontsize{10}{11.5}\selectfont\noindent\begin{tabular}{@{}L{116pt}C{44pt}C{44pt}C{44pt}C{44pt}C{44pt}C{44pt}C{44pt}C{44pt}@{}}
+\toprule
+ & \multicolumn{2}{c}{Contemporaneous} & \multicolumn{2}{c}{Next period} & \multicolumn{4}{c}{Conditional dynamics}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-9}
+Outcome & $\hat\beta_0$ & $R^2_0$ & $\hat\beta_1$ & $R^2_1$ & $1$m & $3$m & $6$m & $12$m\\
+\midrule\multicolumn{9}{@{}l@{}}{\textit{Panel A: Employer transitions}}\\[2pt]
+LEHD transitions & 0.00 & 0.00 & 0.00 & 0.00 & \textemdash & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  &  & (0.00) & (0.00) & (0.00)\\[3pt]
+\midrule\multicolumn{9}{@{}l@{}}{\textit{Panel B: Participation and employment}}\\[2pt]
+LFPR & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[3pt]
+EPR & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[3pt]
+Unemployment-to-\newline employment & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[3pt]
+\midrule\multicolumn{9}{@{}l@{}}{\textit{Panel C: Wage growth and labor share}}\\[2pt]
+Job-switcher wages & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[3pt]
+Job-stayer wages & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[3pt]
+Wage growth gap & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  & (0.00) & (0.00) & (0.00) & (0.00)\\[3pt]
+Labor share & 0.00 & 0.00 & 0.00 & 0.00 & \textemdash & 0.00 & 0.00 & 0.00\\
+ & (0.00) &  & (0.00) &  &  & (0.00) & (0.00) & (0.00)\\[3pt]
+\bottomrule\end{tabular}
+\par\vspace{6pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{2pt}\setlength{\belowdisplayskip}{2pt}
+\setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}
+\textit{Notes:} This table reports ordinary least squares estimates of $\beta_k$ for the bivariate and conditional regression models
+\[z_{t+k}^{Z}=\alpha_k+\beta_k z_t^{EE}+\varepsilon_{t,k},
+\qquad
+z_{t+k}^{Z}=\alpha_k+\beta_k z_t^{EE}+\gamma_k z_t^{Z}+\varepsilon_{t,k},\]
+respectively, where $z^Z$ and $z^{EE}$ denote the labor-market outcome and EE mobility standardized within the relevant regression sample. The contemporaneous and next-period columns use the bivariate model with $k=0$ and $k=1$; the conditional-dynamics columns control for the current outcome. A period is one quarter for LEHD employer transitions and labor share and one month for the other outcomes. LEHD transitions are the administrative job-to-job hires rate; LFPR is labor force participation; EPR is the employment-population ratio; and the unemployment-to-employment measure is the CPS transition probability. Wage measures are monthly observations of year-over-year hourly wage growth, and the wage-growth gap is job-switcher minus job-stayer growth. EE is aligned by economic period, with quarterly mobility averaging three complete monthly observations. For quarterly outcomes, the 3-, 6-, and 12-month columns correspond to one, two, and four quarters. Coefficients are outcome standard deviations per one-standard-deviation increase in EE, and $R^2$ is reported in percent. Parentheses report Newey--West $t$-statistics with 12 monthly or four quarterly lags. $^{*}$, $^{**}$, and $^{***}$ denote significance at the 10\%, 5\%, and 1\% levels, respectively, based on two-sided Student-$t$ tests. Variable definitions and estimation details are provided in Appendix \ref{app:data-definitions} and \ref{app:labor-design}.\par\end{minipage}
+\end{table}

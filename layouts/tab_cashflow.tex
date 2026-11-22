@@ -1,0 +1,27 @@
+\begin{table}[!htbp]\caption{Cash-Flow Predictability}\label{tab:cashflow}\fontsize{11}{12}\selectfont\noindent\begin{tabular}{@{}L{162pt}C{66pt}C{49pt}C{55pt}C{66pt}C{64pt}@{}}\toprule
+ & \multicolumn{3}{c}{In sample} & \multicolumn{2}{c}{Out of sample}\\\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Horizon / window & $\hat\beta_h$ & $t_{NW}$ & $R^2$ & $R^2_{OS}$ & $t_{CW}$\\\midrule
+\multicolumn{6}{l}{\textit{Panel A: Cumulative earnings growth}}\\*
+$h=1$ month & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+$h=3$ months & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+$h=6$ months & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+$h=12$ months & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+$h=24$ months & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+$h=36$ months & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+$h=48$ months & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+$h=60$ months & 0.00 & 0.00 & 0.00 & \textemdash & \textemdash\\[2pt]
+\midrule\multicolumn{6}{l}{\textit{Panel B: Cumulative dividend growth}}\\*
+$h=1$ month & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+$h=3$ months & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+$h=6$ months & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+$h=12$ months & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+$h=24$ months & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+$h=36$ months & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+$h=48$ months & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+$h=60$ months & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+\midrule\multicolumn{6}{l}{\textit{Panel C: Dividend growth after the first year}}\\*
+Year 2 ($h=24$) & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+Years 2--3 ($h=36$) & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+Years 2--4 ($h=48$) & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+Years 2--5 ($h=60$) & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\[2pt]
+\bottomrule\end{tabular}\par\vspace{7pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle\textit{Notes:} All regressions include an intercept, use the lagged EE predictor, and forecast subsequent aggregate earnings or dividend growth. Let $C_t$ denote nominal trailing-twelve-month S\&P 500 earnings or dividends from the updated Welch--Goyal (GW) dataset. Panels A and B report cumulative growth, $100\log(C_{t+h}/C_t)$. Panel C isolates dividend growth after the first year, $100\log(D_{t+h}/D_{t+12})$, so that the reported windows correspond to year 2 and years 2--3, 2--4, and 2--5. Slope coefficients measure growth in log percentage points per one-standard-deviation increase in EE. For horizons up to twelve months, in-sample slope significance uses a two-sided paired moving-block bootstrap with centered studentized statistics; longer-horizon significance uses two-sided Student-$t_{N-2}$ probabilities based on Newey--West standard errors. Out-of-sample results are reported for dividend growth. The historical-average growth forecast is the mean of the same target over the common mature training sample. $R^2_{OS}$ and the one-sided Clark--West test follow the conventions in Table~\ref{tab:predictability}. Both $R^2$ measures are reported in percent. *, **, and *** denote significance at the 10\%, 5\%, and 1\% levels, respectively. Internet Appendix~\ref{app:channels} provides complete specifications and inference details.\par\end{minipage}\end{table}

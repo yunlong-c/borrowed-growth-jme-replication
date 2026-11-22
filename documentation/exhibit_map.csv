@@ -1,0 +1,31 @@
+exhibit,title,latex_label,source_files,binding_code,display_cells,output,layout,status
+Table 1,In-Sample and Out-of-Sample Return Predictability,tab:predictability,results/return_is.csv;results/return_oos.csv;results/aligned/is_results.csv,code/table_values.py,200,output/numerical/tab_predictability.csv,layouts/tab_predictability.tex,included_empirical
+Table 2,Economic Value of Mobility-Based Forecasts,tab:economicvalue,results/portfolio_summary.csv,code/table_values.py,24,output/numerical/tab_economicvalue.csv,layouts/tab_economicvalue.tex,included_empirical
+Table 3,Forecast and Portfolio Robustness,tab:robustness,results/return_robustness.csv;results/portfolio_robustness.csv,code/table_values.py,48,output/numerical/tab_robustness.csv,layouts/tab_robustness.tex,included_empirical
+Table 4,Cash-Flow Predictability,tab:cashflow,results/aligned/is_results.csv;results/aligned/oos_comparisons.csv,code/table_values.py,84,output/numerical/tab_cashflow.csv,layouts/tab_cashflow.tex,included_empirical
+Table 5,"Wages, Labor Costs, and Productivity",tab:laborinputs,results/data_relations.csv;results/channel_production.csv,code/table_values.py,78,output/numerical/tab_laborinputs.csv,layouts/tab_laborinputs.tex,included_empirical
+Table 6,Return Decomposition,tab:decomposition,results/channel_var.csv,code/table_values.py,138,output/numerical/tab_decomposition.csv,layouts/tab_decomposition.tex,included_empirical
+Table A1,Summary Statistics and Correlations with EE Mobility,tab:A_summary,results/data_descriptive.csv,code/table_values.py,200,output/numerical/tab_A_summary.csv,layouts/tab_A_summary.tex,included_empirical
+Table A2,EE Mobility and Labor-Market Outcomes,tab:A_relations,results/data_relations.csv,code/table_values.py,108,output/numerical/tab_A_relations.csv,layouts/tab_A_relations.tex,included_empirical
+Table B1,Return Predictability of Financial and Macroeconomic Indicators,tab:B_gw,results/return_is.csv;results/return_oos.csv,code/table_values.py,280,output/numerical/tab_B_gw.csv,layouts/tab_B_gw.tex,included_empirical
+Table B2,Forecast Encompassing Tests for EE and Alternative Predictors,tab:B_encompassing,results/return_encompassing.csv,code/table_values.py,368,output/numerical/tab_B_encompassing.csv,layouts/tab_B_encompassing.tex,included_empirical
+Table B3,Out-of-Sample Performance of EE Forecast Combinations,tab:B_combination,results/return_combinations.csv,code/table_values.py,368,output/numerical/tab_B_combination.csv,layouts/tab_B_combination.tex,included_empirical
+Table B4,Portfolio Performance of Alternative Return Forecasts,tab:B_portfolios,results/portfolio_summary.csv,code/table_values.py,208,output/numerical/tab_B_portfolios.csv,layouts/tab_B_portfolios.tex,included_empirical
+Table B5,Out-of-Sample Return Forecasts under Alternative Specifications,tab:B_forecast_robust,results/return_robustness.csv,code/table_values.py,56,output/numerical/tab_B_forecast_robust.csv,layouts/tab_B_forecast_robust.tex,included_empirical
+Table B6,Portfolio Performance under Alternative Investment Specifications,tab:B_portfolio_robust,results/portfolio_robustness.csv,code/table_values.py,264,output/numerical/tab_B_portfolio_robust.csv,layouts/tab_B_portfolio_robust.tex,included_empirical
+Table C1,Cash-Flow Predictability with Past-Growth Controls,tab:C_cash_controls,results/aligned/is_results.csv,code/table_values.py,108,output/numerical/tab_C_cash_controls.csv,layouts/tab_C_cash_controls.tex,included_empirical
+Table C2,Long-Horizon Cash-Flow Predictability,tab:C_cash_long,results/aligned/is_results.csv,code/table_values.py,144,output/numerical/tab_C_cash_long.csv,layouts/tab_C_cash_long.tex,included_empirical
+Table C3,Year-by-Year Cash-Flow Predictability,tab:C_cash_annual,results/aligned/is_results.csv,code/table_values.py,80,output/numerical/tab_C_cash_annual.csv,layouts/tab_C_cash_annual.tex,included_empirical
+Table C4,Out-of-Sample Dividend-Growth Forecasts with Past-Growth Controls,tab:C_cash_oos,results/aligned/oos_comparisons.csv,code/table_values.py,156,output/numerical/tab_C_cash_oos.csv,layouts/tab_C_cash_oos.tex,included_empirical
+Table C5,"Predictability of Compensation, Productivity, and Unit Labor Costs",tab:C_production,results/channel_production.csv,code/table_values.py,360,output/numerical/tab_C_production.csv,layouts/tab_C_production.tex,included_empirical
+Table C6,Predictive Regression Fit for Total Returns and Return Components,tab:C_var_details,results/channel_var.csv,code/table_values.py,207,output/numerical/tab_C_var_details.csv,layouts/tab_C_var_details.tex,included_empirical
+Table C7,EE Mobility and Workers’ Employment Expectations,tab:C_sce,results/channel_sce.csv,code/table_values.py,50,output/numerical/tab_C_sce.csv,layouts/tab_C_sce.tex,included_empirical
+Table C8,EE Mobility and Aggregate Financial Conditions,tab:C_pricing,results/channel_pricing.csv,code/table_values.py,15,output/numerical/tab_C_pricing.csv,layouts/tab_C_pricing.tex,included_empirical
+Figure 1,Employer-to-Employer Mobility,fig:mobility,results/data_figure_monthly.csv;results/data_figure_quarterly.csv,code/build_figures.py,,output/figures/figure_1.pdf,,included_empirical
+Figure 2,Cumulative Out-of-Sample Forecast Gains,fig:gains,results/return_forecasts.csv;results/return_oos.csv,code/build_figures.py,,output/figures/figure_2.pdf,,included_empirical
+Figure A1,EE Mobility and Wage Growth of Job Switchers and Stayers,fig:wages,results/data_figure_wages.csv,code/build_figures.py,,output/figures/figure_A1.pdf,,included_empirical
+Table 7,Calibration,tab:calibration,,,,,,model_code_to_be_deposited_before_publication
+Table 8,Model vs. Data: Unconditional Moments (monthly),tab:moments,,,,,,model_code_to_be_deposited_before_publication
+Table 9,Model vs. Data: Cumulative Predictability,tab:model_results,,,,,,model_code_to_be_deposited_before_publication
+Table 10,Channel Ablation (twelve-month cumulative coefficients),tab:ablation,,,,,,model_code_to_be_deposited_before_publication
+Figure 3,The Mechanism in Event Time,fig:irf,,,,,,model_code_to_be_deposited_before_publication

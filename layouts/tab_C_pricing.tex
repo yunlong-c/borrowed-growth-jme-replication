@@ -1,0 +1,19 @@
+\begin{table}[H]
+\caption{EE Mobility and Aggregate Financial Conditions}\label{tab:C_pricing}
+\fontsize{10.5}{12}\selectfont\noindent
+\begin{tabular}{@{}L{210pt}C{66pt}C{54pt}C{44pt}C{58pt}C{36pt}@{}}
+\toprule
+Financial condition & $\hat\beta$ & $t_{NW}$ & $p$ & $R^2$ (\%) & $N$\\
+\midrule
+Forward-earnings-yield premium & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+BEX economic uncertainty & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+Cboe SKEW index & 0.00 & 0.00 & 0.000 & 0.00 & 0\\[3pt]
+\bottomrule\end{tabular}
+\par\vspace{7pt}
+\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{3pt}\setlength{\belowdisplayshortskip}{3pt}
+\textit{Notes:} This table reports ordinary least squares estimates of $\beta$ for the contemporaneous regression
+\[z_t^Z=\alpha+\beta z_t^{EE}+\varepsilon_t,\]
+where $z_t^{EE}$ and $z_t^Z$ denote EE mobility and the financial condition in the first column, respectively, standardized over March 1996--December 2025 and aligned by economic month. The forward-earnings-yield premium is the S\&P 500 forward earnings yield less the expected real yield on ten-year Treasury securities. BEX economic uncertainty is the fitted conditional variance of industrial-production growth from \citet{BEX2022}. The final row uses the month-end Cboe SKEW index. Coefficients measure outcome standard deviations per one-standard-deviation increase in EE. The $t_{NW}$ column reports Newey--West statistics with 12 monthly lags; $p$ and stars use two-sided Student-$t$ probabilities. $R^2$ is reported in percent, and each regression contains 358 observations. $^{*}$, $^{**}$, and $^{***}$ denote significance at the 10\%, 5\%, and 1\% levels. Appendix \ref{app:pricing} provides the variable definitions and estimation details.\par\end{minipage}
+\end{table}

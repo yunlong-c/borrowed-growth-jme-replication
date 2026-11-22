@@ -1,0 +1,42 @@
+\begin{table}[H]
+\caption{Year-by-Year Cash-Flow Predictability}\label{tab:C_cash_annual}
+\fontsize{10.5}{12}\selectfont\noindent
+\begin{tabular}{@{}L{80pt}L{144pt}C{66pt}C{60pt}C{54pt}C{64pt}@{}}
+\toprule
+\multicolumn{6}{@{}l@{}}{\textit{Panel A: Earnings growth}}\\[3pt]
+Future year $k$ & Specification & $\hat\beta_k$ & $t_{NW}$ & $p$ & $R^2$ (\%)\\
+\midrule
+1 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+1 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+2 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+2 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+3 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+3 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+4 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+4 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+5 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+5 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+\midrule
+\multicolumn{6}{@{}l@{}}{\textit{Panel B: Dividend growth}}\\[3pt]
+Future year $k$ & Specification & $\hat\beta_k$ & $t_{NW}$ & $p$ & $R^2$ (\%)\\
+\midrule
+1 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+1 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+2 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+2 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+3 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+3 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+4 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+4 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+5 & EE & 0.00 & 0.00 & 0.000 & 0.00\\
+5 & EE + past growth & 0.00 & 0.00 & 0.000 & 0.00\\
+\bottomrule\end{tabular}
+\par\vspace{7pt}
+\begin{minipage}[t]{\linewidth}\exhibitnotestyle
+\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}
+\setlength{\abovedisplayshortskip}{3pt}\setlength{\belowdisplayshortskip}{3pt}
+\textit{Notes:} This table reports ordinary least squares estimates of $\beta_k$ for predictive regressions of cash-flow growth in each of the five years following the forecast origin,
+\[g^{year}_{t,k}=\alpha_k+\beta_k z_{t-1}^{EE}+\gamma_k g_t^-+\varepsilon_{t,k},
+\qquad k=1,\ldots,5,\]
+where $g^{year}_{t,k}=100\log(C_{t+12k}/C_{t+12(k-1)})$ and $C_t$ is nominal trailing-twelve-month S\&P 500 earnings or dividends. The predictor $z_{t-1}^{EE}$ is standardized EE mobility lagged one month, and $g_t^-=100\log(C_t/C_{t-12})$ is past annual growth. The EE-only specification omits $g_t^-$. Both models and all five future years use the same 300 forecast origins, January 1996--December 2020. EE and the past-growth control remain measured at the original origin rather than being updated for each future year. Coefficients are log-growth percentage points per one-standard-deviation increase in EE. Newey--West standard errors use 60 monthly lags for every specification; the $p$ column and coefficient stars use two-sided Student-$t$ probabilities. $R^2$ is reported in percent. $^{*}$, $^{**}$, and $^{***}$ denote significance at the 10\%, 5\%, and 1\% levels. Appendix \ref{app:cash-long} provides the common-sample construction.\par\end{minipage}
+\end{table}

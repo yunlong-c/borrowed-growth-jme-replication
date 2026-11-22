@@ -1,0 +1,33 @@
+\begin{table}[!htbp]\caption{Return Decomposition}\label{tab:decomposition}\fontsize{11}{12}\selectfont\noindent\begin{tabular}{@{}L{108pt}L{60pt}L{44pt}@{\hspace{24pt}}L{60pt}L{44pt}@{\hspace{24pt}}L{60pt}L{44pt}@{}}\toprule
+VAR variables & \multicolumn{2}{@{}l}{Expected return} & \multicolumn{2}{@{}l}{Cash-flow news} & \multicolumn{2}{@{}l}{Discount-rate news}\\\cmidrule(r){2-3}\cmidrule(r){4-5}\cmidrule(r){6-7}
+ & $\widehat\beta_{ER}$ & $t$ & $\widehat\beta_{CF}$ & $t$ & $\widehat\beta_{DR}$ & $t$\\\midrule
+\multicolumn{7}{@{}l@{}}{\textit{Panel A: Financial predictors}}\\*[4pt]
+r, DP & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, DY & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, EP / DE & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, BM & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, NTIS & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, TBL & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, LTY & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, TMS & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, DFY & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, LTR & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, DFR & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, SVAR & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, INFL & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, PC1-3 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+\midrule\multicolumn{7}{@{}l@{}}{\textit{Panel B: Labor-market predictors}}\\*[4pt]
+r, DP, Payroll & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, Unemp & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, LFPR & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, JPR & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, LMT & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, Hires & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, Quits & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, LIG & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+r, DP, Claims & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
+\bottomrule\end{tabular}\par\vspace{7pt}\noindent\begin{minipage}[t]{\linewidth}\exhibitnotestyle\textit{Notes:} This table reports the ordinary least squares estimates of $\beta_y$ for the predictive regression model
+\[
+y_{t+1}=\alpha_y+\beta_y z_t^{EE}+\varepsilon_{t+1},\qquad t=1,\ldots,T-1,
+\]
+where $y_{t+1}$ is one of the three estimated components of the aggregate log market return and $z_t^{EE}$ is standardized employer-to-employer mobility in economic month $t$. The three estimated components are the expected return ($ER_{t+1}$), cash-flow news ($N_{CF,t+1}$), and discount-rate news ($N_{DR,t+1}$), corresponding to $\hat\beta_{ER}$, $\hat\beta_{CF}$, and $\hat\beta_{DR}$, respectively. The components are obtained using the \citet{Campbell1991} VAR decomposition from a demeaned VAR(1) comprising the variables listed in the first column, where $r$ denotes the aggregate log market return. The decomposition satisfies $r=ER+N_{CF}-N_{DR}$. For the baseline VAR, the total-return slope is $-0.2759$ ($t_{\mathrm{NW}}=-1.19$). The slope identity is $-0.2759=-0.1574-0.1159-0.0026$, up to rounding. Return components are expressed in monthly log-return percentage points, so the coefficients measure monthly log-return percentage points per one-standard-deviation increase in EE. ``PC1--3'' indicates that the VAR includes the first three principal components extracted from the twelve financial predictors excluding DE and TMS. EP and DE span the same information set conditional on DP and therefore enter as a single specification. The $t$ columns report Newey--West statistics with one lag. *, **, and *** denote significance at the 10\%, 5\%, and 1\% levels, respectively. Internet Appendix~\ref{app:channels} provides complete VAR construction, sample, and inference details.\par\end{minipage}\end{table}

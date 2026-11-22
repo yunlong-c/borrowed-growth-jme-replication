@@ -1,0 +1,15 @@
+field,units,definition
+origin / forecast_origin,YYYY-MM,Forecast origin t
+ee_source_month,YYYY-MM,Economic month t-1 of the published EE observation
+growth_base_month,YYYY-MM,t for cumulative growth; t+12 for post-first-year; t+12(k-1) for separate year k
+first_growth_month,YYYY-MM,Growth base plus one month
+target_end,YYYY-MM,Total target endpoint t+h
+max_training_target_end,YYYY-MM,Latest realized endpoint used in training; never greater than forecast_origin
+x_raw / mean_x / sd_x,decimal probability,Published lagged EE and mature-training mean/sample SD
+past_growth,log-growth percentage points,100 log(C[t]/C[t-12]); unstandardized
+beta,target percentage points,Per SD of EE or per percentage point of past growth as identified by term
+p_formal,probability,Formal unrounded bootstrap or Student-t probability for the registered specification
+forecast / actual / error,target percentage points,Monthly-average return or cumulative cash-flow log growth
+r2 / r2_os,percent,IS fit / proportional reduction in OOS MSFE
+cw / p_cw,statistic / probability,Signed centered calendar HAC statistic / Student-t(N-2) upper tail
+extreme_count,integer,Bootstrap tail count; formal p=(count+1)/(draws+1)
